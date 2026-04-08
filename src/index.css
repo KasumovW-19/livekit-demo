@@ -56,3 +56,15 @@ body {
       0 20px 50px -15px rgba(0, 0, 0, 0.55);
   }
 }
+
+@keyframes lk-speaking-dot {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.35;
+    transform: scale(0.8);
+  }
+}
