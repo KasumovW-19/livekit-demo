@@ -6,8 +6,8 @@ import {
 import "@livekit/components-styles";
 
 const LIVEKIT_URL = "wss://staticjs123113efgw-xyb045uf.livekit.cloud";
-const LIVEKIT_API_KEY = "APIMGeJTz6kbLUU";
-const LIVEKIT_API_SECRET = "pvhmPU1ysygReN8aHqq0jWPUWNAL8Db4fKoU3vB1EKU";
+// const LIVEKIT_API_KEY = "APIMGeJTz6kbLUU";
+// const LIVEKIT_API_SECRET = "pvhmPU1ysygReN8aHqq0jWPUWNAL8Db4fKoU3vB1EKU";
 
 const token1 =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzU2MzMzNDMsImlkZW50aXR5IjoidXNlcjEiLCJpc3MiOiJBUElNR2VKVHo2a2JMVVUiLCJuYW1lIjoidXNlcjEiLCJuYmYiOjE3NzU1NDY5NDMsInN1YiI6InVzZXIxIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.ImWmRsdcFCyB5NOnCGDVtWrWqX-37Ci9sfYa2y585eU"
