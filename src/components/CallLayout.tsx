@@ -1,3 +1,4 @@
+import { callUi } from "../theme/callUi";
 import { CallContent } from "./CallContent";
 import { CallFooter } from "./CallFooter";
 import { CallHeader } from "./CallHeader";
@@ -10,16 +11,38 @@ export function CallLayout({ userSlug }: CallLayoutProps) {
   return (
     <div
       style={{
+        position: "relative",
         display: "flex",
         flexDirection: "column",
-        height: "100%",
+        flex: 1,
         minHeight: 0,
-        background: "#0b1020",
+        background: callUi.pageBg,
+        overflow: "hidden",
       }}
     >
-      <CallHeader userSlug={userSlug} />
-      <CallContent />
-      <CallFooter />
+      <div
+        aria-hidden
+        style={{
+          position: "absolute",
+          inset: 0,
+          pointerEvents: "none",
+          background: `${callUi.glowMint}, ${callUi.glowViolet}`,
+        }}
+      />
+      <div
+        style={{
+          position: "relative",
+          zIndex: 1,
+          display: "flex",
+          flexDirection: "column",
+          flex: 1,
+          minHeight: 0,
+        }}
+      >
+        <CallHeader userSlug={userSlug} />
+        <CallContent />
+        <CallFooter />
+      </div>
     </div>
   );
 }
