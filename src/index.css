@@ -57,6 +57,22 @@ body {
   }
 }
 
+/* Панель управления внутри стеклянного футера звонка */
+.lk-call-footer-bar .lk-control-bar {
+  background: transparent;
+  border: none;
+  padding: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.lk-call-footer-bar .lk-button,
+.lk-call-footer-bar .lk-start-audio-button,
+.lk-call-footer-bar .lk-disconnect-button {
+  border-radius: 10px;
+}
+
 @keyframes lk-speaking-dot {
   0%,
   100% {

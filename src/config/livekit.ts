@@ -1,0 +1,19 @@
+export const LIVEKIT_URL = "wss://staticjs123113efgw-xyb045uf.livekit.cloud";
+
+const TOKENS: Record<string, string> = {
+  "1":
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzU4NTgxMjEsImlkZW50aXR5IjoidXNlcjEiLCJpc3MiOiJBUElNR2VKVHo2a2JMVVUiLCJuYW1lIjoidXNlcjEiLCJuYmYiOjE3NzU3NzE3MjEsInN1YiI6InVzZXIxIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.645eijCwjWyZ2kTNsc8mBWvDTZpxpCzsJgs8ImkfURQ",
+  "2":
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzU4NTgxMjEsImlkZW50aXR5IjoidXNlcjIiLCJpc3MiOiJBUElNR2VKVHo2a2JMVVUiLCJuYW1lIjoidXNlcjIiLCJuYmYiOjE3NzU3NzE3MjEsInN1YiI6InVzZXIyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.NziTZJ5NKB2dR3A99UWMKgpARi9jem7Gy7RxQbZjSXQ",
+  "3":
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzU4NTgxMjEsImlkZW50aXR5IjoidXNlcjMiLCJpc3MiOiJBUElNR2VKVHo2a2JMVVUiLCJuYW1lIjoidXNlcjMiLCJuYmYiOjE3NzU3NzE3MjEsInN1YiI6InVzZXIzIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.n7qc4JBIdj7JNAXx91_AjgMUtkpn7aaE25M1DzhO7Ws",
+  "4":
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzU4NTgxMjEsImlkZW50aXR5IjoidXNlcjQiLCJpc3MiOiJBUElNR2VKVHo2a2JMVVUiLCJuYW1lIjoidXNlcjQiLCJuYmYiOjE3NzU3NzE3MjEsInN1YiI6InVzZXI0IiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.GjVRvcE5ypdpbXvAVFIw7ghp01-yi3ng0ceC-OKBPD4",
+  "5":
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzU4NTgxMjEsImlkZW50aXR5IjoidXNlcjUiLCJpc3MiOiJBUElNR2VKVHo2a2JMVVUiLCJuYW1lIjoidXNlcjUiLCJuYmYiOjE3NzU3NzE3MjEsInN1YiI6InVzZXI1IiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sTvtberTJ7xc70_ty3y3ACOKG2wTKviNXk_4kY9atUg",
+};
+
+export function resolveLiveKitToken(user: string | null): string | undefined {
+  if (user == null || user === "") return undefined;
+  return TOKENS[user];
+}
